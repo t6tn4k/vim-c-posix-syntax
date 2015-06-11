@@ -2,17 +2,17 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct group
+  syntax keyword cPosixStruct group
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction endgrent
-  syntax keyword posixFunction getgrent
-  syntax keyword posixFunction getgrgid
-  syntax keyword posixFunction getgrgid_r
-  syntax keyword posixFunction getgrnam
-  syntax keyword posixFunction getgrnam_r
-  syntax keyword posixFunction setgrent
+  syntax keyword cPosixFunction endgrent
+  syntax keyword cPosixFunction getgrent
+  syntax keyword cPosixFunction getgrgid
+  syntax keyword cPosixFunction getgrgid_r
+  syntax keyword cPosixFunction getgrnam
+  syntax keyword cPosixFunction getgrnam_r
+  syntax keyword cPosixFunction setgrent
 endif
 
 let &cpo = s:save_cpo

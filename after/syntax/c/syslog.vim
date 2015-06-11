@@ -2,44 +2,44 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant LOG_PID
-  syntax keyword posixConstant LOG_CONS
-  syntax keyword posixConstant LOG_NDELAY
-  syntax keyword posixConstant LOG_ODELAY
-  syntax keyword posixConstant LOG_NOWAIT
-  syntax keyword posixConstant LOG_KERN
-  syntax keyword posixConstant LOG_USER
-  syntax keyword posixConstant LOG_MAIL
-  syntax keyword posixConstant LOG_NEWS
-  syntax keyword posixConstant LOG_UUCP
-  syntax keyword posixConstant LOG_DAEMON
-  syntax keyword posixConstant LOG_AUTH
-  syntax keyword posixConstant LOG_CRON
-  syntax keyword posixConstant LOG_LPR
-  syntax keyword posixConstant LOG_LOCAL0
-  syntax keyword posixConstant LOG_LOCAL1
-  syntax keyword posixConstant LOG_LOCAL2
-  syntax keyword posixConstant LOG_LOCAL3
-  syntax keyword posixConstant LOG_LOCAL4
-  syntax keyword posixConstant LOG_LOCAL5
-  syntax keyword posixConstant LOG_LOCAL6
-  syntax keyword posixConstant LOG_LOCAL7
-  syntax keyword posixConstant LOG_EMERG
-  syntax keyword posixConstant LOG_ALERT
-  syntax keyword posixConstant LOG_CRIT
-  syntax keyword posixConstant LOG_ERR
-  syntax keyword posixConstant LOG_WARNING
-  syntax keyword posixConstant LOG_NOTICE
-  syntax keyword posixConstant LOG_INFO
-  syntax keyword posixConstant LOG_DEBUG
+  syntax keyword cPosixConstant LOG_PID
+  syntax keyword cPosixConstant LOG_CONS
+  syntax keyword cPosixConstant LOG_NDELAY
+  syntax keyword cPosixConstant LOG_ODELAY
+  syntax keyword cPosixConstant LOG_NOWAIT
+  syntax keyword cPosixConstant LOG_KERN
+  syntax keyword cPosixConstant LOG_USER
+  syntax keyword cPosixConstant LOG_MAIL
+  syntax keyword cPosixConstant LOG_NEWS
+  syntax keyword cPosixConstant LOG_UUCP
+  syntax keyword cPosixConstant LOG_DAEMON
+  syntax keyword cPosixConstant LOG_AUTH
+  syntax keyword cPosixConstant LOG_CRON
+  syntax keyword cPosixConstant LOG_LPR
+  syntax keyword cPosixConstant LOG_LOCAL0
+  syntax keyword cPosixConstant LOG_LOCAL1
+  syntax keyword cPosixConstant LOG_LOCAL2
+  syntax keyword cPosixConstant LOG_LOCAL3
+  syntax keyword cPosixConstant LOG_LOCAL4
+  syntax keyword cPosixConstant LOG_LOCAL5
+  syntax keyword cPosixConstant LOG_LOCAL6
+  syntax keyword cPosixConstant LOG_LOCAL7
+  syntax keyword cPosixConstant LOG_EMERG
+  syntax keyword cPosixConstant LOG_ALERT
+  syntax keyword cPosixConstant LOG_CRIT
+  syntax keyword cPosixConstant LOG_ERR
+  syntax keyword cPosixConstant LOG_WARNING
+  syntax keyword cPosixConstant LOG_NOTICE
+  syntax keyword cPosixConstant LOG_INFO
+  syntax keyword cPosixConstant LOG_DEBUG
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction closelog
-  syntax keyword posixFunction openlog
-  syntax keyword posixFunction setlogmask
-  syntax keyword posixFunction syslog
-  syntax keyword posixFunction LOG_MASK
+  syntax keyword cPosixFunction closelog
+  syntax keyword cPosixFunction openlog
+  syntax keyword cPosixFunction setlogmask
+  syntax keyword cPosixFunction syslog
+  syntax keyword cPosixFunction LOG_MASK
 endif
 
 let &cpo = s:save_cpo

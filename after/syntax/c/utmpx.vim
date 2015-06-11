@@ -2,27 +2,27 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct utmpx
+  syntax keyword cPosixStruct utmpx
 endif
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant EMPTY
-  syntax keyword posixConstant BOOT_TIME
-  syntax keyword posixConstant OLD_TIME
-  syntax keyword posixConstant NEW_TIME
-  syntax keyword posixConstant USER_PROCESS
-  syntax keyword posixConstant INIT_PROCESS
-  syntax keyword posixConstant LOGIN_PROCESS
-  syntax keyword posixConstant DEAD_PROCESS
+  syntax keyword cPosixConstant EMPTY
+  syntax keyword cPosixConstant BOOT_TIME
+  syntax keyword cPosixConstant OLD_TIME
+  syntax keyword cPosixConstant NEW_TIME
+  syntax keyword cPosixConstant USER_PROCESS
+  syntax keyword cPosixConstant INIT_PROCESS
+  syntax keyword cPosixConstant LOGIN_PROCESS
+  syntax keyword cPosixConstant DEAD_PROCESS
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction endutxent
-  syntax keyword posixFunction getutxent
-  syntax keyword posixFunction getutxid
-  syntax keyword posixFunction getutxline
-  syntax keyword posixFunction pututxline
-  syntax keyword posixFunction setutxent
+  syntax keyword cPosixFunction endutxent
+  syntax keyword cPosixFunction getutxent
+  syntax keyword cPosixFunction getutxid
+  syntax keyword cPosixFunction getutxline
+  syntax keyword cPosixFunction pututxline
+  syntax keyword cPosixFunction setutxent
 endif
 
 let &cpo = s:save_cpo

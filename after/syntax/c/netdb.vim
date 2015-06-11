@@ -2,64 +2,64 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct hostent
-  syntax keyword posixStruct netent
-  syntax keyword posixStruct protoent
-  syntax keyword posixStruct servent
-  syntax keyword posixStruct addrinfo
+  syntax keyword cPosixStruct hostent
+  syntax keyword cPosixStruct netent
+  syntax keyword cPosixStruct protoent
+  syntax keyword cPosixStruct servent
+  syntax keyword cPosixStruct addrinfo
 endif
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant AI_PASSIVE
-  syntax keyword posixConstant AI_CANONNAME
-  syntax keyword posixConstant AI_NUMERICHOST
-  syntax keyword posixConstant AI_NUMERICSERV
-  syntax keyword posixConstant AI_V4MAPPED
-  syntax keyword posixConstant AI_ALL
-  syntax keyword posixConstant AI_ADDRCONFIG
-  syntax keyword posixConstant NI_NOFQDN
-  syntax keyword posixConstant NI_NUMERICHOST
-  syntax keyword posixConstant NI_NAMEREQD
-  syntax keyword posixConstant NI_NUMERICSERV
-  syntax keyword posixConstant NI_NUMERICSCOPE
-  syntax keyword posixConstant NI_DGRAM
-  syntax keyword posixConstant IPPORT_RESERVED
-  syntax keyword posixConstant EAI_AGAIN
-  syntax keyword posixConstant EAI_BADFLAGS
-  syntax keyword posixConstant EAI_FAIL
-  syntax keyword posixConstant EAI_FAMILY
-  syntax keyword posixConstant EAI_MEMORY
-  syntax keyword posixConstant EAI_NONAME
-  syntax keyword posixConstant NI_NAMEREQD
-  syntax keyword posixConstant EAI_SERVICE
-  syntax keyword posixConstant EAI_SOCKTYPE
-  syntax keyword posixConstant EAI_SYSTEM
-  syntax keyword posixConstant EAI_OVERFLOW
+  syntax keyword cPosixConstant AI_PASSIVE
+  syntax keyword cPosixConstant AI_CANONNAME
+  syntax keyword cPosixConstant AI_NUMERICHOST
+  syntax keyword cPosixConstant AI_NUMERICSERV
+  syntax keyword cPosixConstant AI_V4MAPPED
+  syntax keyword cPosixConstant AI_ALL
+  syntax keyword cPosixConstant AI_ADDRCONFIG
+  syntax keyword cPosixConstant NI_NOFQDN
+  syntax keyword cPosixConstant NI_NUMERICHOST
+  syntax keyword cPosixConstant NI_NAMEREQD
+  syntax keyword cPosixConstant NI_NUMERICSERV
+  syntax keyword cPosixConstant NI_NUMERICSCOPE
+  syntax keyword cPosixConstant NI_DGRAM
+  syntax keyword cPosixConstant IPPORT_RESERVED
+  syntax keyword cPosixConstant EAI_AGAIN
+  syntax keyword cPosixConstant EAI_BADFLAGS
+  syntax keyword cPosixConstant EAI_FAIL
+  syntax keyword cPosixConstant EAI_FAMILY
+  syntax keyword cPosixConstant EAI_MEMORY
+  syntax keyword cPosixConstant EAI_NONAME
+  syntax keyword cPosixConstant NI_NAMEREQD
+  syntax keyword cPosixConstant EAI_SERVICE
+  syntax keyword cPosixConstant EAI_SOCKTYPE
+  syntax keyword cPosixConstant EAI_SYSTEM
+  syntax keyword cPosixConstant EAI_OVERFLOW
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction endhostent
-  syntax keyword posixFunction endnetent
-  syntax keyword posixFunction endprotoent
-  syntax keyword posixFunction endservent
-  syntax keyword posixFunction freeaddrinfo
-  syntax keyword posixFunction gai_strerror
-  syntax keyword posixFunction getaddrinfo
-  syntax keyword posixFunction gethostent
-  syntax keyword posixFunction getnameinfo
-  syntax keyword posixFunction getnetbyaddr
-  syntax keyword posixFunction getnetbyname
-  syntax keyword posixFunction getnetent
-  syntax keyword posixFunction getprotobyname
-  syntax keyword posixFunction getprotobynumber
-  syntax keyword posixFunction getprotoent
-  syntax keyword posixFunction getservbyname
-  syntax keyword posixFunction getservbyport
-  syntax keyword posixFunction getservent
-  syntax keyword posixFunction sethostent
-  syntax keyword posixFunction setnetent
-  syntax keyword posixFunction setprotoent
-  syntax keyword posixFunction setservent
+  syntax keyword cPosixFunction endhostent
+  syntax keyword cPosixFunction endnetent
+  syntax keyword cPosixFunction endprotoent
+  syntax keyword cPosixFunction endservent
+  syntax keyword cPosixFunction freeaddrinfo
+  syntax keyword cPosixFunction gai_strerror
+  syntax keyword cPosixFunction getaddrinfo
+  syntax keyword cPosixFunction gethostent
+  syntax keyword cPosixFunction getnameinfo
+  syntax keyword cPosixFunction getnetbyaddr
+  syntax keyword cPosixFunction getnetbyname
+  syntax keyword cPosixFunction getnetent
+  syntax keyword cPosixFunction getprotobyname
+  syntax keyword cPosixFunction getprotobynumber
+  syntax keyword cPosixFunction getprotoent
+  syntax keyword cPosixFunction getservbyname
+  syntax keyword cPosixFunction getservbyport
+  syntax keyword cPosixFunction getservent
+  syntax keyword cPosixFunction sethostent
+  syntax keyword cPosixFunction setnetent
+  syntax keyword cPosixFunction setprotoent
+  syntax keyword cPosixFunction setservent
 endif
 
 let &cpo = s:save_cpo

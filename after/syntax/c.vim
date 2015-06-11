@@ -8,13 +8,13 @@ if version >= 508 || !exists('did_c_syntax_posix_inits')
   else
     command -nargs=+ HiLink hi def link <args>
   endif
-  HiLink posixType Type
-  HiLink posixEnum Type
-  HiLink posixStruct Type
-  HiLink posixVariable Identifier
-  HiLink posixConstant Constant
-  HiLink posixEnumConstant Constant
-  HiLink posixFunction Function
+  HiLink cPosixType Type
+  HiLink cPosixEnum Type
+  HiLink cPosixStruct Type
+  HiLink cPosixVariable Identifier
+  HiLink cPosixConstant Constant
+  HiLink cPosixEnumConstant Constant
+  HiLink cPosixFunction Function
   delcommand HiLink
 endif
 

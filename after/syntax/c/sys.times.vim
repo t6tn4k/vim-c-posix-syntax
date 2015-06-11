@@ -2,11 +2,11 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct tms
+  syntax keyword cPosixStruct tms
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction times
+  syntax keyword cPosixFunction times
 endif
 
 let &cpo = s:save_cpo

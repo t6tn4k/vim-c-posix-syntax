@@ -2,28 +2,28 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct pollfd
+  syntax keyword cPosixStruct pollfd
 endif
 
 if !exists('c_no_posix_type')
-  syntax keyword posixType nfds_t
+  syntax keyword cPosixType nfds_t
 endif
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant POLLINData
-  syntax keyword posixConstant POLLRDNORMNormal
-  syntax keyword posixConstant POLLRDBANDPriority
-  syntax keyword posixConstant POLLPRIHigh
-  syntax keyword posixConstant POLLOUTNormal
-  syntax keyword posixConstant POLLWRNORMEquivalent
-  syntax keyword posixConstant POLLWRBANDPriority
-  syntax keyword posixConstant POLLERRAn
-  syntax keyword posixConstant POLLHUPDevice
-  syntax keyword posixConstant POLLNVALInvalid
+  syntax keyword cPosixConstant POLLINData
+  syntax keyword cPosixConstant POLLRDNORMNormal
+  syntax keyword cPosixConstant POLLRDBANDPriority
+  syntax keyword cPosixConstant POLLPRIHigh
+  syntax keyword cPosixConstant POLLOUTNormal
+  syntax keyword cPosixConstant POLLWRNORMEquivalent
+  syntax keyword cPosixConstant POLLWRBANDPriority
+  syntax keyword cPosixConstant POLLERRAn
+  syntax keyword cPosixConstant POLLHUPDevice
+  syntax keyword cPosixConstant POLLNVALInvalid
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction poll
+  syntax keyword cPosixFunction poll
 endif
 
 let &cpo = s:save_cpo

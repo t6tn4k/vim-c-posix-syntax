@@ -2,25 +2,25 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant SEM_UNDO
-  syntax keyword posixConstant GETNCNT
-  syntax keyword posixConstant GETPID
-  syntax keyword posixConstant GETVAL
-  syntax keyword posixConstant GETALL
-  syntax keyword posixConstant GETZCNT
-  syntax keyword posixConstant SETVAL
-  syntax keyword posixConstant SETALL
+  syntax keyword cPosixConstant SEM_UNDO
+  syntax keyword cPosixConstant GETNCNT
+  syntax keyword cPosixConstant GETPID
+  syntax keyword cPosixConstant GETVAL
+  syntax keyword cPosixConstant GETALL
+  syntax keyword cPosixConstant GETZCNT
+  syntax keyword cPosixConstant SETVAL
+  syntax keyword cPosixConstant SETALL
 endif
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct semid_ds
-  syntax keyword posixStruct sembuf
+  syntax keyword cPosixStruct semid_ds
+  syntax keyword cPosixStruct sembuf
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction semctl
-  syntax keyword posixFunction semget
-  syntax keyword posixFunction semop
+  syntax keyword cPosixFunction semctl
+  syntax keyword cPosixFunction semget
+  syntax keyword cPosixFunction semop
 endif
 
 let &cpo = s:save_cpo

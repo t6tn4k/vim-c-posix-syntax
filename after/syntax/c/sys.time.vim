@@ -2,22 +2,22 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct timeval
-  syntax keyword posixStruct itimerval
+  syntax keyword cPosixStruct timeval
+  syntax keyword cPosixStruct itimerval
 endif
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant ITIMER_REAL
-  syntax keyword posixConstant ITIMER_VIRTUAL
-  syntax keyword posixConstant ITIMER_PROF
+  syntax keyword cPosixConstant ITIMER_REAL
+  syntax keyword cPosixConstant ITIMER_VIRTUAL
+  syntax keyword cPosixConstant ITIMER_PROF
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction getitimer
-  syntax keyword posixFunction gettimeofday
-  syntax keyword posixFunction setitimer
-  syntax keyword posixFunction select
-  syntax keyword posixFunction utimes
+  syntax keyword cPosixFunction getitimer
+  syntax keyword cPosixFunction gettimeofday
+  syntax keyword cPosixFunction setitimer
+  syntax keyword cPosixFunction select
+  syntax keyword cPosixFunction utimes
 endif
 
 let &cpo = s:save_cpo

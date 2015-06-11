@@ -2,48 +2,48 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant PROT_EXEC
-  syntax keyword posixConstant PROT_NONE
-  syntax keyword posixConstant PROT_READ
-  syntax keyword posixConstant PROT_WRITE
-  syntax keyword posixConstant MS_ASYNC
-  syntax keyword posixConstant MS_INVALIDATE
-  syntax keyword posixConstant MS_SYNC
-  syntax keyword posixConstant MCL_CURRENT
-  syntax keyword posixConstant MCL_FUTURE
-  syntax keyword posixConstant MAP_FAILED
-  syntax keyword posixConstant POSIX_MADV_DONTNEED
-  syntax keyword posixConstant POSIX_MADV_NORMAL
-  syntax keyword posixConstant POSIX_MADV_RANDOM
-  syntax keyword posixConstant POSIX_MADV_SEQUENTIAL
-  syntax keyword posixConstant POSIX_MADV_WILLNEED
-  syntax keyword posixConstant MAP_FIXED
-  syntax keyword posixConstant MAP_PRIVATE
-  syntax keyword posixConstant MAP_SHARED
-  syntax keyword posixConstant POSIX_TYPED_MEM_ALLOCATE
-  syntax keyword posixConstant POSIX_TYPED_MEM_ALLOCATE_CONTIG
-  syntax keyword posixConstant POSIX_TYPED_MEM_MAP_ALLOCATABLE
+  syntax keyword cPosixConstant PROT_EXEC
+  syntax keyword cPosixConstant PROT_NONE
+  syntax keyword cPosixConstant PROT_READ
+  syntax keyword cPosixConstant PROT_WRITE
+  syntax keyword cPosixConstant MS_ASYNC
+  syntax keyword cPosixConstant MS_INVALIDATE
+  syntax keyword cPosixConstant MS_SYNC
+  syntax keyword cPosixConstant MCL_CURRENT
+  syntax keyword cPosixConstant MCL_FUTURE
+  syntax keyword cPosixConstant MAP_FAILED
+  syntax keyword cPosixConstant POSIX_MADV_DONTNEED
+  syntax keyword cPosixConstant POSIX_MADV_NORMAL
+  syntax keyword cPosixConstant POSIX_MADV_RANDOM
+  syntax keyword cPosixConstant POSIX_MADV_SEQUENTIAL
+  syntax keyword cPosixConstant POSIX_MADV_WILLNEED
+  syntax keyword cPosixConstant MAP_FIXED
+  syntax keyword cPosixConstant MAP_PRIVATE
+  syntax keyword cPosixConstant MAP_SHARED
+  syntax keyword cPosixConstant POSIX_TYPED_MEM_ALLOCATE
+  syntax keyword cPosixConstant POSIX_TYPED_MEM_ALLOCATE_CONTIG
+  syntax keyword cPosixConstant POSIX_TYPED_MEM_MAP_ALLOCATABLE
 endif
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct posix_typed_mem_info
+  syntax keyword cPosixStruct posix_typed_mem_info
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction mlock
-  syntax keyword posixFunction mlockall
-  syntax keyword posixFunction mmap
-  syntax keyword posixFunction mprotect
-  syntax keyword posixFunction msync
-  syntax keyword posixFunction munlock
-  syntax keyword posixFunction munlockall
-  syntax keyword posixFunction munmap
-  syntax keyword posixFunction posix_madvise
-  syntax keyword posixFunction posix_mem_offset
-  syntax keyword posixFunction posix_typed_mem_get_info
-  syntax keyword posixFunction posix_typed_mem_open
-  syntax keyword posixFunction shm_open
-  syntax keyword posixFunction shm_unlink
+  syntax keyword cPosixFunction mlock
+  syntax keyword cPosixFunction mlockall
+  syntax keyword cPosixFunction mmap
+  syntax keyword cPosixFunction mprotect
+  syntax keyword cPosixFunction msync
+  syntax keyword cPosixFunction munlock
+  syntax keyword cPosixFunction munlockall
+  syntax keyword cPosixFunction munmap
+  syntax keyword cPosixFunction posix_madvise
+  syntax keyword cPosixFunction posix_mem_offset
+  syntax keyword cPosixFunction posix_typed_mem_get_info
+  syntax keyword cPosixFunction posix_typed_mem_open
+  syntax keyword cPosixFunction shm_open
+  syntax keyword cPosixFunction shm_unlink
 endif
 
 let &cpo = s:save_cpo

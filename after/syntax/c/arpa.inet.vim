@@ -2,14 +2,14 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction htonl
-  syntax keyword posixFunction htons
-  syntax keyword posixFunction ntohl
-  syntax keyword posixFunction ntohs
-  syntax keyword posixFunction inet_addr
-  syntax keyword posixFunction inet_ntoa
-  syntax keyword posixFunction inet_ntop
-  syntax keyword posixFunction inet_pton
+  syntax keyword cPosixFunction htonl
+  syntax keyword cPosixFunction htons
+  syntax keyword cPosixFunction ntohl
+  syntax keyword cPosixFunction ntohs
+  syntax keyword cPosixFunction inet_addr
+  syntax keyword cPosixFunction inet_ntoa
+  syntax keyword cPosixFunction inet_ntop
+  syntax keyword cPosixFunction inet_pton
 endif
 
 let &cpo = s:save_cpo

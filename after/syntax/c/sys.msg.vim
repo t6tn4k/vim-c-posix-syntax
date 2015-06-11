@@ -2,23 +2,23 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_type')
-  syntax keyword posixType msgqnum_t
-  syntax keyword posixType msglen_t
+  syntax keyword cPosixType msgqnum_t
+  syntax keyword cPosixType msglen_t
 endif
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant MSG_NOERROR
+  syntax keyword cPosixConstant MSG_NOERROR
 endif
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct msqid_ds
+  syntax keyword cPosixStruct msqid_ds
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction msgctl
-  syntax keyword posixFunction msgget
-  syntax keyword posixFunction msgrcv
-  syntax keyword posixFunction msgsnd
+  syntax keyword cPosixFunction msgctl
+  syntax keyword cPosixFunction msgget
+  syntax keyword cPosixFunction msgrcv
+  syntax keyword cPosixFunction msgsnd
 endif
 
 let &cpo = s:save_cpo

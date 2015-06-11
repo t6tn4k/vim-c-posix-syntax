@@ -2,31 +2,31 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant TMAGIC
-  syntax keyword posixConstant TMAGLEN
-  syntax keyword posixConstant TVERSION
-  syntax keyword posixConstant TVERSLEN
-  syntax keyword posixConstant REGTYPE
-  syntax keyword posixConstant AREGTYPE
-  syntax keyword posixConstant LNKTYPE
-  syntax keyword posixConstant SYMTYPE
-  syntax keyword posixConstant CHRTYPE
-  syntax keyword posixConstant BLKTYPE
-  syntax keyword posixConstant DIRTYPE
-  syntax keyword posixConstant FIFOTYPE
-  syntax keyword posixConstant CONTTYPE
-  syntax keyword posixConstant TSUID
-  syntax keyword posixConstant TSGID
-  syntax keyword posixConstant TSVTX
-  syntax keyword posixConstant TUREAD
-  syntax keyword posixConstant TUWRITE
-  syntax keyword posixConstant TUEXEC
-  syntax keyword posixConstant TGREAD
-  syntax keyword posixConstant TGWRITE
-  syntax keyword posixConstant TGEXEC
-  syntax keyword posixConstant TOREAD
-  syntax keyword posixConstant TOWRITE
-  syntax keyword posixConstant TOEXEC
+  syntax keyword cPosixConstant TMAGIC
+  syntax keyword cPosixConstant TMAGLEN
+  syntax keyword cPosixConstant TVERSION
+  syntax keyword cPosixConstant TVERSLEN
+  syntax keyword cPosixConstant REGTYPE
+  syntax keyword cPosixConstant AREGTYPE
+  syntax keyword cPosixConstant LNKTYPE
+  syntax keyword cPosixConstant SYMTYPE
+  syntax keyword cPosixConstant CHRTYPE
+  syntax keyword cPosixConstant BLKTYPE
+  syntax keyword cPosixConstant DIRTYPE
+  syntax keyword cPosixConstant FIFOTYPE
+  syntax keyword cPosixConstant CONTTYPE
+  syntax keyword cPosixConstant TSUID
+  syntax keyword cPosixConstant TSGID
+  syntax keyword cPosixConstant TSVTX
+  syntax keyword cPosixConstant TUREAD
+  syntax keyword cPosixConstant TUWRITE
+  syntax keyword cPosixConstant TUEXEC
+  syntax keyword cPosixConstant TGREAD
+  syntax keyword cPosixConstant TGWRITE
+  syntax keyword cPosixConstant TGEXEC
+  syntax keyword cPosixConstant TOREAD
+  syntax keyword cPosixConstant TOWRITE
+  syntax keyword cPosixConstant TOEXEC
 endif
 
 let &cpo = s:save_cpo

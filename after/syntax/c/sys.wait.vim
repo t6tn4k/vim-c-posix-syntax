@@ -2,36 +2,36 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant WCONTINUED
-  syntax keyword posixConstant WNOHANG
-  syntax keyword posixConstant WUNTRACED
-  syntax keyword posixConstant WEXITED
-  syntax keyword posixConstant WNOWAIT
-  syntax keyword posixConstant WSTOPPED
+  syntax keyword cPosixConstant WCONTINUED
+  syntax keyword cPosixConstant WNOHANG
+  syntax keyword cPosixConstant WUNTRACED
+  syntax keyword cPosixConstant WEXITED
+  syntax keyword cPosixConstant WNOWAIT
+  syntax keyword cPosixConstant WSTOPPED
 endif
 
 if !exists('c_no_posix_enum')
-  syntax keyword posixEnum idtype_t
+  syntax keyword cPosixEnum idtype_t
 endif
 
 if !exists('c_no_posix_enum_constant')
   " enum idtype_t
-  syntax keyword posixEnumConstant P_ALL
-  syntax keyword posixEnumConstant P_GID
-  syntax keyword posixEnumConstant P_PID
+  syntax keyword cPosixEnumConstant P_ALL
+  syntax keyword cPosixEnumConstant P_GID
+  syntax keyword cPosixEnumConstant P_PID
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction wait
-  syntax keyword posixFunction waitid
-  syntax keyword posixFunction waitpid
-  syntax keyword posixFunction WEXITSTATUS
-  syntax keyword posixFunction WIFCONTINUED
-  syntax keyword posixFunction WIFEXITED
-  syntax keyword posixFunction WIFSIGNALED
-  syntax keyword posixFunction WIFSTOPPED
-  syntax keyword posixFunction WSTOPSIG
-  syntax keyword posixFunction WTERMSIG
+  syntax keyword cPosixFunction wait
+  syntax keyword cPosixFunction waitid
+  syntax keyword cPosixFunction waitpid
+  syntax keyword cPosixFunction WEXITSTATUS
+  syntax keyword cPosixFunction WIFCONTINUED
+  syntax keyword cPosixFunction WIFEXITED
+  syntax keyword cPosixFunction WIFSIGNALED
+  syntax keyword cPosixFunction WIFSTOPPED
+  syntax keyword cPosixFunction WSTOPSIG
+  syntax keyword cPosixFunction WTERMSIG
 endif
 
 let &cpo = s:save_cpo

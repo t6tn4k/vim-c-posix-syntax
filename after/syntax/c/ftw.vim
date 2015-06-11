@@ -2,26 +2,26 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct FTW
+  syntax keyword cPosixStruct FTW
 endif
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant FTW_F
-  syntax keyword posixConstant FTW_D
-  syntax keyword posixConstant FTW_DNR
-  syntax keyword posixConstant FTW_DP
-  syntax keyword posixConstant FTW_NS
-  syntax keyword posixConstant FTW_SL
-  syntax keyword posixConstant FTW_SLN
-  syntax keyword posixConstant FTW_PHYS
-  syntax keyword posixConstant FTW_MOUNT
-  syntax keyword posixConstant FTW_DEPTH
-  syntax keyword posixConstant FTW_CHDIR
+  syntax keyword cPosixConstant FTW_F
+  syntax keyword cPosixConstant FTW_D
+  syntax keyword cPosixConstant FTW_DNR
+  syntax keyword cPosixConstant FTW_DP
+  syntax keyword cPosixConstant FTW_NS
+  syntax keyword cPosixConstant FTW_SL
+  syntax keyword cPosixConstant FTW_SLN
+  syntax keyword cPosixConstant FTW_PHYS
+  syntax keyword cPosixConstant FTW_MOUNT
+  syntax keyword cPosixConstant FTW_DEPTH
+  syntax keyword cPosixConstant FTW_CHDIR
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction ftw
-  syntax keyword posixFunction nftw
+  syntax keyword cPosixFunction ftw
+  syntax keyword cPosixFunction nftw
 endif
 
 let &cpo = s:save_cpo

@@ -2,29 +2,29 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct aiocb
+  syntax keyword cPosixStruct aiocb
 endif
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant AIO_ALLDONE
-  syntax keyword posixConstant AIO_CANCELED
-  syntax keyword posixConstant AIO_NOTCANCELED
-  syntax keyword posixConstant LIO_NOP
-  syntax keyword posixConstant LIO_NOWAIT
-  syntax keyword posixConstant LIO_READ
-  syntax keyword posixConstant LIO_WAIT
-  syntax keyword posixConstant LIO_WRITE
+  syntax keyword cPosixConstant AIO_ALLDONE
+  syntax keyword cPosixConstant AIO_CANCELED
+  syntax keyword cPosixConstant AIO_NOTCANCELED
+  syntax keyword cPosixConstant LIO_NOP
+  syntax keyword cPosixConstant LIO_NOWAIT
+  syntax keyword cPosixConstant LIO_READ
+  syntax keyword cPosixConstant LIO_WAIT
+  syntax keyword cPosixConstant LIO_WRITE
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction aio_cancel
-  syntax keyword posixFunction aio_error
-  syntax keyword posixFunction aio_fsync
-  syntax keyword posixFunction aio_read
-  syntax keyword posixFunction aio_return
-  syntax keyword posixFunction aio_suspend
-  syntax keyword posixFunction aio_write
-  syntax keyword posixFunction lio_listio
+  syntax keyword cPosixFunction aio_cancel
+  syntax keyword cPosixFunction aio_error
+  syntax keyword cPosixFunction aio_fsync
+  syntax keyword cPosixFunction aio_read
+  syntax keyword cPosixFunction aio_return
+  syntax keyword cPosixFunction aio_suspend
+  syntax keyword cPosixFunction aio_write
+  syntax keyword cPosixFunction lio_listio
 endif
 
 let &cpo = s:save_cpo

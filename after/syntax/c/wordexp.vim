@@ -2,26 +2,26 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct wordexp_t
+  syntax keyword cPosixStruct wordexp_t
 endif
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant WRDE_APPEND
-  syntax keyword posixConstant WRDE_DOOFFS
-  syntax keyword posixConstant WRDE_NOCMD
-  syntax keyword posixConstant WRDE_REUSE
-  syntax keyword posixConstant WRDE_SHOWERR
-  syntax keyword posixConstant WRDE_UNDEF
-  syntax keyword posixConstant WRDE_BADCHAR
-  syntax keyword posixConstant WRDE_BADVAL
-  syntax keyword posixConstant WRDE_CMDSUB
-  syntax keyword posixConstant WRDE_NOSPACE
-  syntax keyword posixConstant WRDE_SYNTAX
+  syntax keyword cPosixConstant WRDE_APPEND
+  syntax keyword cPosixConstant WRDE_DOOFFS
+  syntax keyword cPosixConstant WRDE_NOCMD
+  syntax keyword cPosixConstant WRDE_REUSE
+  syntax keyword cPosixConstant WRDE_SHOWERR
+  syntax keyword cPosixConstant WRDE_UNDEF
+  syntax keyword cPosixConstant WRDE_BADCHAR
+  syntax keyword cPosixConstant WRDE_BADVAL
+  syntax keyword cPosixConstant WRDE_CMDSUB
+  syntax keyword cPosixConstant WRDE_NOSPACE
+  syntax keyword cPosixConstant WRDE_SYNTAX
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction wordexp
-  syntax keyword posixFunction wordfree
+  syntax keyword cPosixFunction wordexp
+  syntax keyword cPosixFunction wordfree
 endif
 
 let &cpo = s:save_cpo

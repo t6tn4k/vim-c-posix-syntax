@@ -2,17 +2,17 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct statvfs
+  syntax keyword cPosixStruct statvfs
 endif
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant ST_RDONLY
-  syntax keyword posixConstant ST_NOSUID
+  syntax keyword cPosixConstant ST_RDONLY
+  syntax keyword cPosixConstant ST_NOSUID
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction fstatvfs
-  syntax keyword posixFunction statvfs
+  syntax keyword cPosixFunction fstatvfs
+  syntax keyword cPosixFunction statvfs
 endif
 
 let &cpo = s:save_cpo

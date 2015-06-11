@@ -2,64 +2,64 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 if !exists('c_no_posix_constant')
-  syntax keyword posixConstant F_DUPFD
-  syntax keyword posixConstant F_DUPFD_CLOEXEC
-  syntax keyword posixConstant F_GETFD
-  syntax keyword posixConstant F_SETFD
-  syntax keyword posixConstant F_GETFL
-  syntax keyword posixConstant F_SETFL
-  syntax keyword posixConstant F_GETLK
-  syntax keyword posixConstant F_SETLK
-  syntax keyword posixConstant F_SETLKW
-  syntax keyword posixConstant F_GETOWN
-  syntax keyword posixConstant F_SETOWN
-  syntax keyword posixConstant FD_CLOEXEC
-  syntax keyword posixConstant F_RDLCK
-  syntax keyword posixConstant F_UNLCK
-  syntax keyword posixConstant F_WRLCK
-  syntax keyword posixConstant O_CLOEXEC
-  syntax keyword posixConstant O_CREAT
-  syntax keyword posixConstant O_DIRECTORY
-  syntax keyword posixConstant O_EXCL
-  syntax keyword posixConstant O_NOCTTY
-  syntax keyword posixConstant O_NOFOLLOW
-  syntax keyword posixConstant O_TRUNC
-  syntax keyword posixConstant O_TTY_INIT
-  syntax keyword posixConstant O_APPEND
-  syntax keyword posixConstant O_DSYNC
-  syntax keyword posixConstant O_NONBLOCK
-  syntax keyword posixConstant O_RSYNC
-  syntax keyword posixConstant O_SYNC
-  syntax keyword posixConstant O_ACCMODE
-  syntax keyword posixConstant O_EXEC
-  syntax keyword posixConstant O_RDONLY
-  syntax keyword posixConstant O_RDWR
-  syntax keyword posixConstant O_SEARCH
-  syntax keyword posixConstant O_WRONLY
-  syntax keyword posixConstant AT_FDCWD
-  syntax keyword posixConstant AT_EACCESS
-  syntax keyword posixConstant AT_SYMLINK_NOFOLLOW
-  syntax keyword posixConstant AT_SYMLINK_FOLLOW
-  syntax keyword posixConstant AT_REMOVEDIR
-  syntax keyword posixConstant POSIX_FADV_DONTNEED
-  syntax keyword posixConstant POSIX_FADV_NOREUSE
-  syntax keyword posixConstant POSIX_FADV_NORMAL
-  syntax keyword posixConstant POSIX_FADV_RANDOM
-  syntax keyword posixConstant POSIX_FADV_SEQUENTIAL
-  syntax keyword posixConstant POSIX_FADV_WILLNEED
+  syntax keyword cPosixConstant F_DUPFD
+  syntax keyword cPosixConstant F_DUPFD_CLOEXEC
+  syntax keyword cPosixConstant F_GETFD
+  syntax keyword cPosixConstant F_SETFD
+  syntax keyword cPosixConstant F_GETFL
+  syntax keyword cPosixConstant F_SETFL
+  syntax keyword cPosixConstant F_GETLK
+  syntax keyword cPosixConstant F_SETLK
+  syntax keyword cPosixConstant F_SETLKW
+  syntax keyword cPosixConstant F_GETOWN
+  syntax keyword cPosixConstant F_SETOWN
+  syntax keyword cPosixConstant FD_CLOEXEC
+  syntax keyword cPosixConstant F_RDLCK
+  syntax keyword cPosixConstant F_UNLCK
+  syntax keyword cPosixConstant F_WRLCK
+  syntax keyword cPosixConstant O_CLOEXEC
+  syntax keyword cPosixConstant O_CREAT
+  syntax keyword cPosixConstant O_DIRECTORY
+  syntax keyword cPosixConstant O_EXCL
+  syntax keyword cPosixConstant O_NOCTTY
+  syntax keyword cPosixConstant O_NOFOLLOW
+  syntax keyword cPosixConstant O_TRUNC
+  syntax keyword cPosixConstant O_TTY_INIT
+  syntax keyword cPosixConstant O_APPEND
+  syntax keyword cPosixConstant O_DSYNC
+  syntax keyword cPosixConstant O_NONBLOCK
+  syntax keyword cPosixConstant O_RSYNC
+  syntax keyword cPosixConstant O_SYNC
+  syntax keyword cPosixConstant O_ACCMODE
+  syntax keyword cPosixConstant O_EXEC
+  syntax keyword cPosixConstant O_RDONLY
+  syntax keyword cPosixConstant O_RDWR
+  syntax keyword cPosixConstant O_SEARCH
+  syntax keyword cPosixConstant O_WRONLY
+  syntax keyword cPosixConstant AT_FDCWD
+  syntax keyword cPosixConstant AT_EACCESS
+  syntax keyword cPosixConstant AT_SYMLINK_NOFOLLOW
+  syntax keyword cPosixConstant AT_SYMLINK_FOLLOW
+  syntax keyword cPosixConstant AT_REMOVEDIR
+  syntax keyword cPosixConstant POSIX_FADV_DONTNEED
+  syntax keyword cPosixConstant POSIX_FADV_NOREUSE
+  syntax keyword cPosixConstant POSIX_FADV_NORMAL
+  syntax keyword cPosixConstant POSIX_FADV_RANDOM
+  syntax keyword cPosixConstant POSIX_FADV_SEQUENTIAL
+  syntax keyword cPosixConstant POSIX_FADV_WILLNEED
 endif
 
 if !exists('c_no_posix_struct')
-  syntax keyword posixStruct flock
+  syntax keyword cPosixStruct flock
 endif
 
 if !exists('c_no_posix_function')
-  syntax keyword posixFunction creat
-  syntax keyword posixFunction fcntl
-  syntax keyword posixFunction open
-  syntax keyword posixFunction openat
-  syntax keyword posixFunction posix_fadvise
-  syntax keyword posixFunction posix_fallocate
+  syntax keyword cPosixFunction creat
+  syntax keyword cPosixFunction fcntl
+  syntax keyword cPosixFunction open
+  syntax keyword cPosixFunction openat
+  syntax keyword cPosixFunction posix_fadvise
+  syntax keyword cPosixFunction posix_fallocate
 endif
 
 let &cpo = s:save_cpo
